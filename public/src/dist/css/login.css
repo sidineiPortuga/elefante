@@ -1,7 +1,7 @@
 * {
   font-family: sans-serif; }
 
-body {
+.bodylogin {
   background-image: linear-gradient(to bottom, #f1775f 4%, #dd5e67 19%, #111a43);
   width: 95vw;
   height: 100vh; }

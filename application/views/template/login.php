@@ -1,4 +1,5 @@
 
+<div class="bodylogin">
 <div class="containerLogin">
    <div class="containersvg">
         <img class="loginSvg" src="./public/src/dev/img/user.svg" alt="login icon">
@@ -16,4 +17,5 @@
            <input id="remember" class="checkInput" type="checkbox"/> <label for="remember">Remember me </label> <p>Forgot your password</p>
        </div>
   </form>
+</div>
 </div>
