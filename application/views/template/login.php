@@ -18,6 +18,8 @@
        </div>
   </form>
 </div>
+
+
 <script language="javascript">
     $('.checkbox').click(function(){
         var verificar = $(this).attr('verificar');

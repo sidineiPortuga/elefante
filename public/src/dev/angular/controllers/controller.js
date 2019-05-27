@@ -1,3 +1,3 @@
-app.controller('MeuController', ['$scope', function($scope) {
-    $scope.item = 'Testing';
+app.controller('appCtrl', ['$scope', function($scope) {
+    $scope.item = 'Hello World!';
 }]);

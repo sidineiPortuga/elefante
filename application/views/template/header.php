@@ -15,5 +15,5 @@
     
     
 </head>
-<body>
+<body ng-controller="appCtrl">
  
