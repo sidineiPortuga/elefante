@@ -7,7 +7,7 @@
     
     <title>Elefante</title>
 
-    <link href="./public/src/dist/css/global.css" rel="stylesheet" />
+    <link href="./public/src/dist/css/nav-page.css" rel="stylesheet" />
     <link href="./public/src/dist/css/login.css" rel="stylesheet" />
     
     
