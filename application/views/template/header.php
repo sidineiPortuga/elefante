@@ -9,6 +9,7 @@
 
     <link href="./public/src/dist/css/nav-page.css" rel="stylesheet" />
     <link href="./public/src/dist/css/login.css" rel="stylesheet" />
+    <link href="./public/src/dist/css/register.css" rel="stylesheet" />
     
     
 </head>
