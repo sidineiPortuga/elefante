@@ -6,7 +6,7 @@ class Home extends CI_Controller {
 	public function index()
 	{
 	
-		$this->template->show('template/home.php');
+		$this->template->show('nav.php');
 
 	}
 }
