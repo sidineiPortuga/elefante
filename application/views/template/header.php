@@ -9,12 +9,9 @@
     <script src="./public/src/dev/js/libs/jquery.js"></script>
     <link href="./public/src/dist/css/nav-page.css" rel="stylesheet" />
     <link href="./public/src/dist/css/login.css" rel="stylesheet" />
-<<<<<<< HEAD
     <link href="./public/src/dist/css/register.css" rel="stylesheet" />
-=======
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
->>>>>>> 9f9f1347b585e6acfd97f52e47b5b9878ff66687
     
     
 </head>
