@@ -6,7 +6,6 @@ class Navpage extends CI_Controller {
 	public function index()
 	{
 		$this->template->show('template/nav-page.php');
-		// $this->template->show('template/home.php');
 		
 
 	}
