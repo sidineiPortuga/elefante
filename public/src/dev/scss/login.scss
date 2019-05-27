@@ -1,0 +1,153 @@
+
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #f1775f 4%, #dd5e67 19%, #111a43);
+    width: 95vw;
+    height: 100vh;
+}
+
+
+.containerLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.containersvg{
+    border:3px solid white;
+    border-radius:50%;
+    padding:40px;
+   margin-bottom:30px;
+   position: relative;
+}
+
+.containersvg::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    border: 1px solid white;
+    transform: translate(-137%);
+    top: 60%;
+}
+
+.containersvg::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    border: 1px solid white;
+    transform: translate(137%);
+    top: 60%;
+}
+
+
+.loginSvg{
+    width:100px;
+    height:100px;
+}
+
+
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerInput{
+    background-color: transparent;
+    border-radius: 5px;
+    margin:10px;
+    position: relative;
+    width: 386px;
+    border: 2px solid white
+}
+
+
+
+.containerInput input{
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    border: none;
+    padding-left:30px;
+}
+
+.loginSvgInput{
+    width:24px;
+    height:50px;
+    margin-left:15px;
+    background-color: transparent;
+}
+
+
+
+.btnlogin{
+    margin:10px;
+    width:95%;
+    height:45px;
+    border-radius:5px;
+    background-color:#ff5089;
+    color:white;
+    border:none;
+
+}
+
+.btnlogin:active{
+    transform: translateY(2px)
+}
+.check{
+    border:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+    border-bottom:2px solid white;
+    padding-bottom:50px;
+    padding-top:50px;
+    color:white;
+    
+}
+
+.check p{
+    margin-left: auto;
+    color:rgba(211, 211, 211, 0.315);
+    font-style: italic;
+    cursor:pointer;
+}
+
+.checkInput{
+    background-color: transparent;
+    margin-right:10px;
+}
+
+
+@media all and (max-width: 425px){
+    .containerInput{
+        width:280px;
+    }
+
+    .containersvg::before{
+        width: 50px;
+        transform: translate(-173%);
+    }
+    .containersvg::after{
+        width: 50px;
+        transform: translate(268%);
+    }
+
+    .containerInput input{
+        width: 80%;
+    }
+
+    .check{
+        width: 295px;
+    }
+}
