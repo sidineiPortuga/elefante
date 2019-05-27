@@ -1,8 +1,9 @@
 
-<div class="containerLogin">
-   <div class="containersvg">
-        <img class="loginSvg" src="./public/src/dev/img/user.svg" alt="login icon">
-   </div>
+<div class="bodylogin">
+    <div class="containerLogin">
+        <div class="containersvg">
+                <img class="loginSvg" src="./public/src/dev/img/user.svg" alt="login icon">
+        </div>
 
    <form>
        <div class="containerInput">

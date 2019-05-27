@@ -1,0 +1,73 @@
+* {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  * .navegacao {
+    width: 100%;
+    display: flex; }
+    * .navegacao .nav-header {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 100vh;
+      width: 270px; }
+      * .navegacao .nav-header .nav-header-title {
+        color: #fff;
+        text-align: center;
+        font-size: 1.37rem;
+        background-color: #266e97;
+        width: 100%;
+        height: 60px;
+        padding-top: 15px; }
+      * .navegacao .nav-header .nav-header-opcoes {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: rgba(0, 0, 0, 0.808);
+        width: 100%;
+        height: 100vh; }
+        * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-title {
+          font-size: 1.11rem;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.315);
+          color: rgba(255, 255, 255, 0.486);
+          padding: 15px 10px; }
+        * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul {
+          width: 100%;
+          list-style: none; }
+          * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .nav-header-opcoes-ul-li {
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+            justify-content: center;
+            height: 48px;
+            width: 100%;
+            color: #fff;
+            font-size: 0.844rem; }
+          * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .btn {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: flex-start;
+            border: none;
+            cursor: pointer;
+            height: 48px;
+            width: 100%;
+            padding: 0 0 0 15px;
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 0.922rem; }
+            * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .btn .icon {
+              margin-right: 8px; }
+            * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .btn:hover {
+              background-color: rgba(0, 0, 0, 0.315);
+              border-left: 2px #349bd6 solid; }
+    * .navegacao .body {
+      width: 100%;
+      background-color: rgba(214, 199, 199, 0.356); }
+      * .navegacao .body .nav-menu {
+        background-color: #2b7aa8;
+        width: 100%;
+        height: 60px; }

@@ -1,11 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Navpage extends CI_Controller {
 
 	public function index()
 	{
-		$this->template->show('nav.php');
+		$this->template->show('template/nav-page.php');
 		// $this->template->show('template/home.php');
 		
 
