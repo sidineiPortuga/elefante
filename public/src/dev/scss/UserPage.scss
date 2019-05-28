@@ -1,0 +1,198 @@
+
+// ------------------------HEADER-----------------------
+
+.header{
+    background-color: #ff9600;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    flex-wrap:wrap;
+}
+
+.header .header-input-box{
+    background-color:white;
+    width:350px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding:5px;margin: 10px;
+    
+}
+
+.header .header-input-box input{
+    width:90%;
+    height:100%;
+    border:none;
+    outline: none;
+}
+
+.fa-caret-down{
+    color:white;
+    margin-left:10px;
+    cursor: pointer;
+}
+
+.header-profile-content{
+    display: flex;
+    align-items: center;
+
+}
+
+.header-profile{
+    background-color:white;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    cursor: pointer;
+
+}
+
+.search-btn{
+    width:20px;
+    height:20px;
+}
+
+.search-btn:active{
+    transform: translateY(2px)
+}
+
+// ---------------------------PERFIL DO USUÁRIO BREAKCUMB------------------
+
+.perfil-usuario h1{
+    padding:20px
+}
+ul.perfil-usuario-breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    font-size: 12px;
+  }
+  ul.perfil-usuario-breadcrumb li {
+    display: inline;
+
+  }
+  ul.perfil-usuario-breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.perfil-usuario-breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  ul.perfil-usuario-breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
+
+//   ------------------------------------- SECTION DASHBOARD----------------------------------------
+
+.section-dashboard{
+    background-color: #f6f6f6;
+    display: flex;
+    padding:20px;
+}
+
+.section-dashboard-aside{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.section-dashboard-aside >*{
+    background-color: white;
+    padding:10px;
+}
+
+.section-dashboard-aside-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-dashboard-aside-info header{
+    display: flex;
+    align-items: center;
+    margin-bottom:20px;
+
+}
+
+// ------------------------- DASHBOARD INFO PROFILE ---------------------
+
+.section-dashboard-aside-info header .profile-card{
+    background-color:lightgray;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin:10px;
+}
+
+.section-dashboard-aside-info header .info-box{
+    display:flex;
+    align-items: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+.section-dashboard-aside-info header .info-box .profile-online{
+   background-color:green;
+   width:10px;
+   height:10px;
+   border-radius:50%;
+   margin:10px;
+}
+
+.section-dashboard-aside-info header .info-box .info-box-profile{
+    display:flex;
+    align-items: center;
+}
+
+.section-dashboard-aside-info header .info-box  .info-box-bottom{
+    display:flex;
+    align-items: center; 
+}
+
+.section-dashboard-aside-info header .info-box  .info-box-bottom p{
+    font-size: 10px;
+}
+.fa-mars,.fa-calendar,.fa-envelope,.fa-phone,.fa-map-marker {
+    color:lightblue;
+    margin:10px;
+
+}
+
+
+
+
+.section-dashboard-aside-info  .info-box-btn{
+    background-color:#5eb85c;
+    color:white;
+    width:100%;
+    height:35px;
+    border-radius:5px;
+    padding:10px;
+
+}
+
+.section-dashboard-aside-info  .info-box-btn span{
+    margin-left:20px;
+}
+
+.info-box-contacts{
+    margin-top:30px;
+}
+
+.info-box-contact-cotent{
+    display:flex;
+    align-items:center;
+    
+}
+
+.info-box-contact-cotent p{
+    font-size: 12px;
+}
+
+
+// --------------------- BOX ENTRAR EM CONTATO -------------------

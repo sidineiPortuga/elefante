@@ -5,7 +5,7 @@ class Login extends CI_Controller {
 
 	public function index()
 	{
-        $this->template->show('template/login.php');
+        $this->template->showOff('templateOff/login.php');
       
 
 	}

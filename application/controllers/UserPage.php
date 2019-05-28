@@ -1,12 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Register extends CI_Controller {
+class UserPage extends CI_Controller {
 
 	public function index()
 	{
-		$this->template->showOff('templateOff/register.php');
-		
+        $this->template->show('template/UserPage.php');
+      
 
 	}
 }

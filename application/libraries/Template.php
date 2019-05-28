@@ -18,4 +18,21 @@ class Template {
  
 
 		}
+
+		function showOff($view, $data=array()){
+ 
+			$CI = & get_instance();
+ 
+			// Load header
+			$CI->load->view('templateOff/header',$data);
+ 
+			// Load content
+			$CI->load->view($view,$data);
+			// $CI->load->view('template/home',$data);
+ 
+			// Load footer
+			$CI->load->view('templateOff/footer',$data);
+ 
+
+		}
 }
