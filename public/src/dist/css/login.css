@@ -101,11 +101,11 @@ form {
 .checkInput {
   background-color: transparent;
   margin-right: 10px;
-  display: none;}
+  display: none; }
 
 .checkbox {
-    margin-right: 10px;}
-    
+  margin-right: 10px; }
+
 @media all and (max-width: 425px) {
   .containerInput {
     width: 280px; }
