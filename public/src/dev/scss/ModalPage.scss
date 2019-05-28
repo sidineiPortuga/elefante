@@ -154,6 +154,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        width: 100%;
+        height: 100%;
+
         padding: 100px 50px;
         background: #fff;
         
@@ -183,11 +187,17 @@
         .grid{
             width: 100%;
             display: flex;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
         
+            @media (max-width: 500px){
+                flex-flow: column wrap;
+            }
+
             .user-content{
+                transition: 1s;
                 width: 20%;
                 height: 428px;
+                width: 365px;
                 background-clip: content-box;
                 background-size: cover;
                 background-position: center;
@@ -195,6 +205,18 @@
                 padding: 0px 1%;
                 margin-bottom: 2%;
                 border-radius: 11px;
+
+                @media (max-width: 1795px){
+                    width: 450px;
+                }
+
+                @media (max-width: 1670px){
+                    width: 650px;
+                }
+
+                @media (max-width: 1500px){
+                    width: 100%;
+                }
             }
             
 
@@ -258,6 +280,8 @@
         }
         
         .view_user {
+            height: 50px;
+            
             border: none;
             padding: 4% 26%;
             font-size: 1.3rem;
@@ -290,14 +314,9 @@
             }
         }
 
-        @media(max-width:1200px){
-            .card-user .grid div.user-content {
-                width: 50%;
-            }
-        }
 
         @media(max-width:800px){
-            .card-user .grid div.user-content {
+            .card-user .grid .user-content {
                 width: 100%;
             }
         }

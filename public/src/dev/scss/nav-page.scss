@@ -1,12 +1,16 @@
+
+
+
 *{
     font-family: "Arial", sans-serif;
     margin:0;
     padding:0;
     box-sizing: border-box;
     
-    .navegacao{
-        width: 100%;
+    $header-width:270px;
 
+    .navegacao{
+        height: 100%;
         display: flex;
 
         .nav-header{
@@ -14,9 +18,9 @@
             flex-flow: column;
             align-items: flex-start;
             justify-content: flex-start;
-
-            height: 100vh;
-            width: 270px;
+            position: fixed;
+            width: $header-width;
+            height: 100%;
 
             .nav-header-title{
                 
@@ -111,6 +115,7 @@
 
         .body{
             width: 100%;
+            margin-left: $header-width;
 
             background-color: rgba(214, 199, 199, 0.356);
 
@@ -118,6 +123,26 @@
                 background-color: rgb(43, 122, 168);
                 width: 100%;
                 height: 60px;
+
+                .nav-menu-icon{
+                    opacity: 0.86;
+
+                    border: none;
+                    background-color: rgba(255, 255, 255, 0);
+
+                    cursor: pointer;
+
+                    .fa-bars{
+                        margin: 15px 15px;
+                        font-size: 2rem;
+                        color: #fff;
+                    }
+                    
+
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
             }
         }
     }

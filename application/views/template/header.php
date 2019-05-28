@@ -41,6 +41,6 @@
     </div>
     
     <div class="body">
-        <div class="nav-menu"></div>
+        <div class="nav-menu"><button class="nav-menu-icon"><i class="fas fa-bars"></i></button></div>
 
  
