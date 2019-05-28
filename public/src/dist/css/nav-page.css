@@ -28,7 +28,7 @@
         justify-content: flex-start;
         background-color: rgba(0, 0, 0, 0.808);
         width: 100%;
-        height: 100vh; }
+        height: 100%; }
         * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-title {
           font-size: 1.11rem;
           width: 100%;
@@ -59,8 +59,9 @@
             padding: 0 0 0 15px;
             background-color: rgba(0, 0, 0, 0);
             font-size: 0.922rem; }
-            * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .btn .icon {
-              margin-right: 8px; }
+            * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .btn .far, * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .btn .fas {
+              color: #fff;
+              margin-right: 10px; }
             * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .btn:hover {
               background-color: rgba(0, 0, 0, 0.315);
               border-left: 2px #349bd6 solid; }

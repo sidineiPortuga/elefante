@@ -42,7 +42,7 @@
                 background-color: rgba(0, 0, 0, 0.808);
         
                 width: 100%;
-                height: 100vh;
+                height: 100%;
 
                 .nav-header-opcoes-title{
                     font-size: 1.11rem;
@@ -92,8 +92,9 @@
                         background-color: rgba(0, 0, 0, 0);
                         font-size: 0.922rem;
 
-                        .icon{
-                            margin-right: 8px;
+                        .far, .fas{
+                            color: #fff;
+                            margin-right: 10px;
                         }
 
                         &:hover{
