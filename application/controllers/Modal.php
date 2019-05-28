@@ -5,6 +5,6 @@ class Modal extends CI_Controller {
 
 	public function index()
 	{
-        	$this->template->show('template/ModalPage.php');
+        	$this->template->show('template/cardUser.php');
 	}
 }

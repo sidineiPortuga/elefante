@@ -1,184 +1,305 @@
-.cadastroClientes{
-    .add-modal{
+
+.modal{
+    transition: .5s;
+    
+    position: relative;
+    opacity: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.active{
+        transition: 2s;
+        display: flex;
+        opacity: 1;
+    }
+    
+    
+    .bg{
+
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+    
+
+    display: none;
+
+    position: fixed;
+    z-index: 1;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    
+
+    .modal-content{ //Definição da caixa do Modal
         display: flex;
         align-items: center;
         justify-content: center;
-
-        border: 1px solid rgba(0, 0, 0, 0.178);
-        border-radius: 4px; 
         
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.342);
+
+        padding: 50px;
+        position: relative;
+
+        z-index: 2;
+        background-color: rgb(85, 170, 219);
+        padding: 20px;
+
+        border: .55px solid rgba(136, 136, 136, 0.315);
+        border-radius: 8px;
+
+        height: 500px;
+        width: 500px;
         
-        margin: 30px 50px;
+        border: none;
 
-        height: 400px;
-        width: 250px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.082);
 
-        #modal-btn{
-            transition: .5s;
-            font-size: 3rem;
+
+        .modal-content-close{
+            opacity: .85;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 15;
+            margin: 15px;
+            
+            color: #fff;
+            background-color: rgba(0,0,0,.0);
+
             border: none;
-            border-radius: 16px;
-            background-color: rgba(255, 255, 255, 0);
-
             cursor: pointer;
 
             &:hover{
-                font-size: 4rem;
-
                 opacity: 1;
-                color: rgb(85, 170, 219);
+            }
+
+            .fa-times-circle{
+                font-size: 2rem;
+
             }
         }
-        
-        .modal{
-            transition: .5s;
-            
-            position: relative;
-            opacity: 0;
-            
+
+        .modal-content-form{
+            width: 400px;
+
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
 
-            &.active{
-                transition: 2s;
-                display: flex;
-                opacity: 1;
-            }
-            
-            
-            .bg{
-
-                position: absolute;
-                display: flex;
-                width: 100%;
-                height: 100%;
-                background-color: rgb(0,0,0);
-                background-color: rgba(0,0,0,0.4);
-            }
-            
-
-            display: none;
-
-            position: fixed;
-            z-index: 1;
-
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            
-        
-            .modal-content{ //Definição da caixa do Modal
+            .modal-content-form-img{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                
 
-                padding: 50px;
-                position: relative;
 
-                z-index: 2;
-                background-color: rgb(85, 170, 219);
-                padding: 20px;
+                background-color: rgba(255, 255, 255, 0);
+                height: 200px;
+                width: 200px;
 
-                border: .55px solid rgba(136, 136, 136, 0.315);
-                border-radius: 8px;
+                #modal-content-form-img-user{
+                    height: 75%;
+                    width: 75%;
+                }
+            }
 
-                height: 500px;
-                width: 500px;
+            .modal-content-form-input{
+                width: 100%;
+                height: 50px;
+
+
+                padding: 10px;
+
+                margin: 10px;
+
+                border-radius: 4px;
+                border: none;
+            }
+
+            .modal-content-form-btn{
+
+                cursor: pointer;
+
+                width: 100%;
+                height: 50px;
+
+                background-color: #ffffff;
+                color :#000;
                 
                 border: none;
+                border-radius: 4px;
 
-                box-shadow: 0 0 15px rgba(0, 0, 0, 0.082);
+                margin: 10px 0;
+                padding: 5px 10px;
 
-
-                .modal-content-close{
-                    opacity: .85;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    padding: 15;
-                    margin: 15px;
-                    
+                &:hover{
                     color: #fff;
-                    background-color: rgba(0,0,0,.0);
-
-                    border: none;
-                    cursor: pointer;
-
-                    &:hover{
-                        opacity: 1;
-                    }
-
-                    .fa-times-circle{
-                        font-size: 2rem;
-
-                    }
+                    background-color: #ff5089;
                 }
+            }
+        }
 
-                .modal-content-form{
-                    width: 400px;
+    }    
+}
 
-                    display: flex;
-                    align-items: center;
+
+.card-user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 50px;
+        background: #fff;
+        
+        h3{
+            font-size: 1.5rem;
+            margin-bottom: 35px;
+            color: #7d7d7d;
+            text-align: center;
+        }
+        
+        p {
+            max-width: 800px;
+            margin-bottom: 35px;
+            color: #191c03;
+            text-align: center;
+        }
+
+        hr{
+            width: 200px;
+            height: 2px;
+            background-color:  #191c03;
+            margin-bottom: 70px;
+            border: none;
+        }
+
+
+        .grid{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        
+            .user-content{
+                width: 20%;
+                height: 428px;
+                background-clip: content-box;
+                background-size: cover;
+                background-position: center;
+                background-color: white;
+                padding: 0px 1%;
+                margin-bottom: 2%;
+                border-radius: 11px;
+            }
+            
+
+        .card {
+            box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.35);
+            width: 100%;
+            height: 100%;
+            border-radius: 3px;
+            transform:translateY(0px);
+            transition: all .2s;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0px 0px 16px #929292;
+            }
+
+            ul {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                li {
+                    list-style: none;
                     justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
 
-                    .modal-content-form-img{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-
-                        background-color: rgba(255, 255, 255, 0);
-                        height: 200px;
-                        width: 200px;
-
-                        #modal-content-form-img-user{
-                            height: 75%;
-                            width: 75%;
-                        }
-                    }
-
-                    .modal-content-form-input{
+                    p {
+                        display: inline-block;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        direction: ltr;
                         width: 100%;
-                        height: 50px;
-
-
-                        padding: 10px;
-
-                        margin: 10px;
-
-                        border-radius: 4px;
-                        border: none;
-                    }
-
-                    .modal-content-form-btn{
-
-                        cursor: pointer;
-
-                        width: 100%;
-                        height: 50px;
-
-                        background-color: #ffffff;
-                        color :#000;
-                        
-                        border: none;
-                        border-radius: 4px;
-
-                        margin: 10px 0;
-                        padding: 5px 10px;
-
-                        &:hover{
-                            color: #fff;
-                            background-color: #ff5089;
-                        }
                     }
                 }
+            }
+        }
 
-            }    
+        .auxiliary-text p {
+            padding: 0px 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #7d7d7d; 
+        }
+
+        .img-card{  
+            
+            img {
+                padding: 23px;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+
+            div{
+            flex-direction: column;
+            }
+        }
+        
+        .view_user {
+            border: none;
+            padding: 4% 26%;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #f3f3f3;
+            margin-bottom: 12%;
+            border-radius: 4px;
+            background: #909090;
+            box-shadow: 0px 0px 7px #a0a0a0;
+            cursor: pointer;
+            transition: 0.2s;
+            
+            &:hover:active:focus {
+                background: #545454;
+                transition: 0.2s;
+            }
+        }
+        
+        .plus-user {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            cursor: pointer;
+
+            i {
+                font-size: 4rem;
+                color: #a9a9a9;
+            }
+        }
+
+        @media(max-width:1200px){
+            .card-user .grid div.user-content {
+                width: 50%;
+            }
+        }
+
+        @media(max-width:800px){
+            .card-user .grid div.user-content {
+                width: 100%;
+            }
         }
     }
 }
