@@ -295,14 +295,16 @@ ul.perfil-usuario-breadcrumb li a:hover {
   padding-left: 28px; }
 
 .container-actions-items-state-content p {
-  font-size: 12px; }
+  font-size: 12px;
+  font-weight: 600;
+  color: #333333cf; }
 
 .container-actions-items h5 {
   padding: 10px;
   padding-left: 28px; }
 
 .item-loja {
-  color: #74c1e6; }
+  color: #74c1e6 !important; }
 
 .container-actions .container-actions-items header {
   background-color: #f6f6f6;
