@@ -262,7 +262,7 @@ ul.perfil-usuario-breadcrumb li a:hover {
   padding: 8px; }
 
 .chart-container {
-  width: 72vw;
+  width: 100%;
   height: 30vh;
   position: relative;
   background-color: white; }
@@ -278,6 +278,12 @@ ul.perfil-usuario-breadcrumb li a:hover {
   flex-direction: column;
   margin-top: 30px;
   width: 100%; }
+
+.canvas-element {
+  width: 500px;
+  height: 200px;
+  position: relative;
+  left: 22%; }
 
 .container-actions h1 {
   padding: 10px; }

@@ -20,7 +20,7 @@
 <body ng-controller="appCtrl">
 
 <section class="navegacao">
-    <div class="nav-header">
+    <div class="nav-header" ng-class="{'manipulateMenu':hamburguerMenu}">
         <div class="nav-header-title">
             Laravel
         </div>
@@ -28,19 +28,19 @@
             <span class="nav-header-opcoes-title ">Admin</span>
             <ul class="nav-header-opcoes-ul dark">
 
-                <li class="nav-header-opcoes-ul-li"><button class="nav-header-opcoes-ul-li btn"><i class="far fa-flag"></i> Countries</button></li>
+                <li class="nav-header-opcoes-ul-li"><button class="nav-header-opcoes-ul-li btn  waves-effect" ng-click="clickStyle()" ng-class="{'btn-effect': clickEffect}"><i class="far fa-flag "></i> Countries</button></li>
 
-                <li class="nav-header-opcoes-ul-li"><button class="nav-header-opcoes-ul-li btn"><i class="fas fa-university"></i> Cities</button></li>
+                <li class="nav-header-opcoes-ul-li"><button class="nav-header-opcoes-ul-li btn  waves-effect" ng-click="clickStyle()" ng-class="{'btn-effect': clickEffect}"><i class="fas fa-university"></i> Cities</button></li>
 
-                <li class="nav-header-opcoes-ul-li"><button class="nav-header-opcoes-ul-li btn"><i class="fas fa-dollar-sign"></i> Currencies</button></li>
+                <li class="nav-header-opcoes-ul-li"><button class="nav-header-opcoes-ul-li btn  waves-effect" ng-click="clickStyle()" ng-class="{'btn-effect': clickEffect}"><i class="fas fa-dollar-sign"></i> Currencies</button></li>
 
-                <li class="nav-header-opcoes-ul-li"><button class="nav-header-opcoes-ul-li btn"><i class="fas fa-running"></i> Sair</button></li>
+                <li class="nav-header-opcoes-ul-li"><button class="nav-header-opcoes-ul-li btn  waves-effect" ng-click="clickStyle()" ng-class="{'btn-effect': clickEffect}"><i class="fas fa-running"></i> Sair</button></li>
 
             </ul>
         </div>
     </div>
     
-    <div class="body">
-        <div class="nav-menu"><button class="nav-menu-icon"><i class="fas fa-bars"></i></button></div>
+    <div class="body" ng-class="{'manipulateBody':hamburguerMenu}">
+        <div class="nav-menu"><button class="nav-menu-icon  waves-effect" ng-click="hamburguer()"><i class="fas fa-bars"></i></button></div>
 
  

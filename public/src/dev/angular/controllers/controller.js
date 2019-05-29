@@ -35,11 +35,13 @@ $('.checkbox').click(function(){
 
 
 var ctx = document.getElementById('myChart').getContext('2d');
-Chart.defaults.global.responsive = false;
+
 var myChart = new Chart(ctx, {
     type: 'bar',
+ 
     data: {
         labels: ['jan', 'feb', 'Mar', 'Apr', 'May', 'June', 'July', 'August', 'Sep', 'Oct', 'Nov', 'Dec'],
+
         datasets: [{
             label: '# of Votes',
             data: [12, 19, 3, 5, 2, 3,12, 5, 3, 5, 2, 3],
@@ -70,6 +72,7 @@ var myChart = new Chart(ctx, {
     },
     
     options: {
+
         scales: {
             yAxes: [{
                 ticks: {
