@@ -147,16 +147,24 @@
            <h1> Timeline de ações</h1> 
 
            <div class="container-actions-items">
-               <header>Atividades online <span class="container-actions-items-state-header">São Paulo</span></header>
+          <div class="headerContainer"> <span class="container-actions-icon"><img class="flag-icon" src="public/src/dev/img/time.svg"/></span> <header>Atividades online <span class="container-actions-items-state-header">São Paulo/SP <img class="flag-icon" src="public/src/dev/img/brazil.svg"/> <img class="flag-icon" src="public/src/dev/img/google.svg"/> </span></header></div>
+               <span class="container-actions-items-state-content"><img class="flag-icon" src="public/src/dev/img/cellphone.svg"/><p>{{ timelineAcoes.install }}</p> </span> 
+               <span class="container-actions-items-state-content"><img class="flag-icon" src="public/src/dev/img/facebook.svg"/><p>{{ timelineAcoes.like }}</p> </span> 
 
            </div>
            <div class="container-actions-items">
-               <header>Atividades na loja</header>
 
+           <div class="headerContainer"> <span class="container-actions-icon"><img class="flag-icon" src="public/src/dev/img/store.svg"/></span> <header>Atividades na loja<span class="container-actions-items-state-header">São Paulo/SP <img class="flag-icon" src="public/src/dev/img/brazil.svg"/> <img class="flag-icon" src="public/src/dev/img/google.svg"/> </span></header></div>
+                <h5 >Segunda, 06 de outrubro</h5>
+               <span class="container-actions-items-state-content"><img class="flag-icon" src="public/src/dev/img/login-actions.svg"/><p class="item-loja">{{ timelineAcoes.enter }}</p> </span> 
+               <span class="container-actions-items-state-content"><img class="flag-icon" src="public/src/dev/img/logout-actions.svg"/><p class="item-loja">{{ timelineAcoes.exit }}</p> </span> 
+
+        
            </div>
 
            <div class="container-actions-items">
-               <header>Atividades no site</header>
+           <div class="headerContainer"> <span class="container-actions-icon"><img class="flag-icon" src="public/src/dev/img/laptop.svg"/></span>   <header>Atividades no site<span class="container-actions-items-state-header">São Paulo/SP <img class="flag-icon" src="public/src/dev/img/brazil.svg"/><img class="flag-icon" src="public/src/dev/img/google.svg"/> </span></header></span></div>
+               <h5>Segunda, 06 de outrubro</h5>
 
            </div>
 

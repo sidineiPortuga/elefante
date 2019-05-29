@@ -1,7 +1,15 @@
 // Controller
 app.controller('appCtrl', ['$scope', function($scope) {
     $scope.modalView = false;
+    $scope.timelineAcoes = {
+        install:'Instalou o Aplicativo',
+        like :'Curtiu a Página do Facebook',
+        enter: 'Entrou na loja',
+        exit :'Saiu da loja',
+        date: new Date()
+    };
 
+    console.log($scope.timelineAcoes)
     $scope.modal = function(){
         $scope.modalView = !$scope.modalView;
     }
@@ -34,52 +42,4 @@ $('.checkbox').click(function(){
 
 
 
-var ctx = document.getElementById('myChart').getContext('2d');
-
-var myChart = new Chart(ctx, {
-    type: 'bar',
- 
-    data: {
-        labels: ['jan', 'feb', 'Mar', 'Apr', 'May', 'June', 'July', 'August', 'Sep', 'Oct', 'Nov', 'Dec'],
-
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3,12, 5, 3, 5, 2, 3],
-            backgroundColor: [
-                '#fe9500',
-                '#fe9500',
-                '#fe9500',
-                '#fe9500',
-                '#fe9500',
-                '#fe9500',
-                '#fe9500',
-                '#fe9500',
-                '#fe9500',
-                '#fe9500',
-                '#fe9500',
-                '#fe9500'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    
-    options: {
-
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
 

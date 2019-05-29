@@ -291,13 +291,14 @@ background-color:gray;
      margin-left: 10px;
      display: flex;
      width: 100%;
+     height: 65.4vh;
      flex-wrap: wrap;
  }
 
 //  ------------------------------------------------BOX COMMENTS--------------
 
  .section-dashboard-aside-comments{
-    width: 274px;
+    width: 285px;
     background-color: white;
     height: auto;
     padding: 11px;
@@ -398,19 +399,93 @@ background-color:gray;
 }
 
 .container-actions .container-actions-items {
-    height: 100px;
+    height: auto;
+    width: 71%;
+    align-self: flex-end;
+    background-color: white
+
+}
+
+.container-actions-items-state-content{
+    display:flex;
+    align-items: center;
+    padding: 5px;
+    padding-left: 28px;
+
+
+}
+.container-actions-items-state-content p{
+    font-size: 12px;
+
+}
+.container-actions-items h5{
+
+    padding:10px;
+    padding-left: 28px;
+
+}
+
+
+.item-loja{
+    color:#74c1e6
 }
 .container-actions .container-actions-items header{
 background-color: #f6f6f6;
-padding:20px;
+padding:10px;
 display: flex;
 align-items: center;
 justify-content: space-between;
+flex-wrap: wrap;
+margin-right: 15px;
+flex: 1;
 }
-
 
 
 .container-actions-items-state-header{
     font-size: 12px;
     color: gray;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+.headerContainer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.container-actions-icon{
+    position: relative;
+    right: 24%;
+}
+.flag-icon{
+    width: 20px;
+    height:20px;
+    margin:5px;
+}
+
+@media screen and (max-width:1130px){
+                .section-dashboard{
+                    flex-direction: column;
+                }
+                .container-actions .container-actions-items {
+                width: 100%
+              }
+
+            .section-dashboard-aside, .section-dashboard-aside-info, .section-dashboard-aside-contact,.section-dashboard-aside-tags, .section-dashboard-aside-comments{
+                width: 100%;
+            }
+            .container-actions-icon{
+                display: none;
+            }
+
+}
+
+
+@media screen and (max-width:671px){
+    .nav-header{
+        display: none;
+    }
+
 }
