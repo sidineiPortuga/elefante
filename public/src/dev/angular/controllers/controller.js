@@ -50,8 +50,9 @@ app.controller('appCtrl', ['$scope', function($scope) {
 
 
     //Configuração do Chart na Pagina de User 
+
     
-    $('.checkbox').click(function(){
+    /* $('.checkbox').click(function(){
         var verificar = $(this).attr('verificar');
         if(verificar == 0){
             $('.checkbox').removeClass('fa-square').addClass('fa-check-square');
@@ -110,5 +111,5 @@ app.controller('appCtrl', ['$scope', function($scope) {
                 }]
             }
         }
-    });
+    }); */
 }]);
