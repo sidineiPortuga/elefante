@@ -22,7 +22,9 @@
 <section class="navegacao">
     <div class="nav-header" ng-class="{'manipulateMenu':hamburguerMenu}">
         <div class="nav-header-title">
-            Laravel
+            Laravel        
+            <button class="nav-header-btn  waves-effect" ng-click="hamburguer()"><i class="fas fa-bars"></i></button>
+
         </div>
         <div class="nav-header-opcoes">
             <span class="nav-header-opcoes-title ">Admin</span>

@@ -1,5 +1,8 @@
 // Controller
+
 app.controller('appCtrl', ['$scope', function($scope) {
+
+    //ABERTURA DO MODAL
     $scope.modalView = false;
     $scope.timelineAcoes = {
         install:'Instalou o Aplicativo',
@@ -13,33 +16,28 @@ app.controller('appCtrl', ['$scope', function($scope) {
     $scope.modal = function(){
         $scope.modalView = !$scope.modalView;
     }
-        var friends = [
-            {img:'img.jpg', name:'Peter'},
-            {img:'img.jpg', name:'Peter'},
-            {img:'img.jpg', name:'Peter'},
-            {img:'img.jpg', name:'Peter'}
-            
-        ];
+
+
+    //REPEAT DO CARD
+    var friends = [
+        {img:'img.jpg', name:'Peter'},
+        {img:'img.jpg', name:'Peter'},
+        {img:'img.jpg', name:'Peter'},
+        {img:'img.jpg', name:'Peter'},
+        {img:'img.jpg', name:'Peter'},
+        {img:'img.jpg', name:'Peter'},
+        {img:'img.jpg', name:'Peter'}
+    ];
+
     $scope.reset = function() {
         $scope.friends = angular.copy(friends);
-    };
+    }     
     $scope.reset();
     
-}]);
+    //MENU HAMBURGUER
+    $scope.hamburguerMenu = false;
 
-$('.checkbox').click(function(){
-    var verificar = $(this).attr('verificar');
-    if(verificar == 0){
-        $('.checkbox').removeClass('fa-square').addClass('fa-check-square');
-        $('.checkbox').attr('verificar', 1);
-        $("#remember").click();
-    }else{
-        $('.checkbox').removeClass('fa-check-square').addClass('fa-square');
-        $('.checkbox').attr('verificar', 0);
-        $("#remember").click();
+    $scope.hamburguer = function(){
+        $scope.hamburguerMenu = !$scope.hamburguerMenu;
     }
-})
-
-
-
-
+}]);

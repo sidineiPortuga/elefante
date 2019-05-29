@@ -1,7 +1,7 @@
 <section class="modal" ng-class="{'active':modalView}">
     <div class="bg" ng-click="modal()"></div>
     <div class="modal-content">
-        <button class="modal-content-close"ng-click="modal()"><i class="far fa-times-circle"></i></button>
+        <button class="modal-content-close" ng-click="modal()"><i class="far fa-times-circle"></i></button>
         <form action="" class="modal-content-form">
             <div class="modal-content-form-img"><img id="modal-content-form-img-user" src="./public/src/dev/img/user.svg" alt=""></div>
             <input type="text" class="modal-content-form-input" placeholder="E-mail">
@@ -20,8 +20,6 @@
             </div>
         </div>
         
-
-        <!-- Cards com Usuários, já -->
         <div class="user-content" ng-repeat="friend in friends">
             <div class="card">
                 <ul class="column-nowrap">
@@ -34,9 +32,9 @@
                         </div>
                     </li>
                     <li class="auxiliary-text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro molestias neque ut quam non fuga accusantium quidem doloremque maxime harum quas, qui ipsa aperiam, sed blanditiis est omnis nobis.
-                    </p>
+                        <p>
+                            We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy. We need to neutralize the homing signal.                    
+                        </p>
                     </li>
                     <li class="flex-end">
                         <button class="view_user waves-effect">Ver</button>
