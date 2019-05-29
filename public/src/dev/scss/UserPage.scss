@@ -93,19 +93,24 @@ ul.perfil-usuario-breadcrumb {
 .section-dashboard{
     background-color: #f6f6f6;
     display: flex;
-    padding:20px;
+    align-items:flex-start ;
+    padding: 20px;
+ 
 }
+
 
 .section-dashboard-aside{
     display: flex;
     align-items: center;
     flex-direction: column;
+    align-items: center;
 
 }
 
 .section-dashboard-aside >*{
     background-color: white;
     padding:10px;
+    margin:10px;
 }
 
 .section-dashboard-aside-info{
@@ -157,7 +162,7 @@ ul.perfil-usuario-breadcrumb {
 .section-dashboard-aside-info header .info-box  .info-box-bottom p{
     font-size: 10px;
 }
-.fa-mars,.fa-calendar,.fa-envelope,.fa-phone,.fa-map-marker {
+.fa-mars,.fa-calendar,.fa-envelope,.fa-phone,.fa-map-marker,.fa-sms,.fa-bell,.fa-microphone {
     color:lightblue;
     margin:10px;
 
@@ -196,3 +201,189 @@ ul.perfil-usuario-breadcrumb {
 
 
 // --------------------- BOX ENTRAR EM CONTATO -------------------
+<<<<<<< HEAD
+
+.section-dashboard-aside-contact{
+    width: 274px;
+}
+.section-dashboard-aside-contact p{
+    font-size: 10px;
+}
+.container-items{
+    display: flex;
+    align-items: center;
+}
+.container-items-content{
+    display: flex;
+    align-items: center;
+   
+    
+}
+
+.container-items-content p{
+    font-size: 12px;
+}
+
+
+
+// -------------------------------------Box TAGS -------------------------------
+
+.section-dashboard-aside-tags{
+    width: 274px;
+}
+.container-tags{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    border-top:1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+   
+}
+
+.container-tags >*{
+    padding: 2px 9px;
+    margin:5px;
+    color:white;
+    cursor: pointer;
+}
+
+.container-tags .container-items-tags:hover{
+    transform:translateY(2px)
+}
+
+.container-tags .container-items-tags:nth-child(1){
+background-color:gray;
+}
+.container-tags .container-items-tags:nth-child(2){
+    background-color:#357cb9;
+ }
+
+ .container-tags .container-items-tags:nth-child(3){
+    background-color:#5eb85c;
+ }
+
+ .container-tags .container-items-tags:nth-child(4){
+    background-color:#5bc0dc;
+ }
+
+ .container-tags .container-items-tags:nth-child(5){
+    background-color:#efad4b;
+ }
+
+ .container-tags .container-items-tags:nth-child(6){
+    background-color:red;
+ }
+
+ .add-container{
+     display: flex;
+     align-items: center;
+ }
+
+ .add-container p{
+     font-size: 12px;
+ }
+ .fa-plus{
+     margin:10px;
+     color:lightgray;
+     cursor:pointer;
+ }
+
+ .chart-section{
+     margin-top: 10px;
+     margin-left: 30px;
+
+     display: flex;
+     width: 100%;
+     flex-wrap: wrap;
+ }
+
+ .section-dashboard-aside-comments{
+    width: 274px;
+ }
+ .profile-pic{
+     width:40px;
+     height:40px;
+     border-radius:50%;
+     background-color:lightgray;
+     margin:10px;
+ }
+
+ .comments-box{
+     display: flex;
+     align-items: center;
+     border-top: 1px solid lightgray;
+     border-bottom: 1px solid lightgray;
+     padding: 2px;
+ }
+
+ .comments p{
+
+    display: flex;
+    flex-direction: column;
+    width:188px;
+ }
+
+ .add-comment{
+     display: flex;
+     align-items: center;
+     padding: 4px;
+ }
+
+ .input-text-area{
+    width: 79%;
+    height: 36px;
+    resize: none;
+ }
+
+ .input-text-area::placeholder{
+     padding: 8px;
+    
+ }
+
+
+//  ----------------------------Chart------------
+
+
+ .chart-container{
+    background-color: white;
+    width: 100%;
+    .canvas-element{
+        width: 100%;
+        height: 200px;
+        max-height: 200px;
+        display: flex;
+        position: relative;
+    }
+ }
+
+ .chart-container header{
+     background-color: #fdfdfd;
+    padding: 10px;
+    border-bottom:1px solid lightgray;
+    
+ }
+
+
+//  --------------------------------ACÕES----------------
+
+.container-actions{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+}
+
+.container-actions h1{
+    padding: 10px;
+}
+
+.container-actions .container-actions-items {
+    height: 100px;
+}
+.container-actions .container-actions-items header{
+background-color: #f6f6f6;
+padding:20px;
+}
+=======
+>>>>>>> 902bdc4a8c485fc598465dc47e43f312aede878e
