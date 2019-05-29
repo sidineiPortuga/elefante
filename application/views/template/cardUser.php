@@ -6,8 +6,8 @@
             <div class="modal-content-form-img"><img id="modal-content-form-img-user" src="./public/src/dev/img/user.svg" alt=""></div>
             <input type="text" class="modal-content-form-input" placeholder="E-mail">
             <input type="text" class="modal-content-form-input" placeholder="Cargo">
-            <button class="modal-content-form-btn" ng-click="copy()">Copiar Senha</button>
-            <button class="modal-content-form-btn" ng-click="registerUser()">Cadastrar</button>
+            <button class="modal-content-form-btn waves-effect" ng-click="copy()">Copiar Senha</button>
+            <button class="modal-content-form-btn waves-effect" ng-click="registerUser()">Cadastrar</button>
         </form>
     </div>
 </section>

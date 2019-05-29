@@ -7,6 +7,7 @@
     height: 100%;
     display: flex; }
     * .navegacao .nav-header {
+      transition: 1s;
       display: flex;
       flex-flow: column;
       align-items: flex-start;
@@ -14,6 +15,8 @@
       position: fixed;
       width: 270px;
       height: 100%; }
+      * .navegacao .nav-header.manipulateMenu {
+        width: 0px; }
       * .navegacao .nav-header .nav-header-title {
         color: #fff;
         text-align: center;
@@ -48,33 +51,41 @@
             width: 100%;
             color: #fff;
             font-size: 0.844rem; }
-          * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .btn {
-            display: flex;
-            flex-flow: row;
-            align-items: center;
-            justify-content: flex-start;
-            border: none;
-            cursor: pointer;
-            height: 48px;
-            width: 100%;
-            padding: 0 0 0 15px;
-            background-color: rgba(0, 0, 0, 0);
-            font-size: 0.922rem; }
-            * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .btn .far, * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .btn .fas {
-              color: #fff;
-              margin-right: 10px; }
-            * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .btn:hover {
+            * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .nav-header-opcoes-ul-li .btn {
+              display: flex;
+              flex-flow: row;
+              align-items: center;
+              justify-content: flex-start;
+              border: none;
+              cursor: pointer;
+              height: 48px;
+              width: 100%;
+              padding: 0 0 0 15px;
+              background-color: rgba(0, 0, 0, 0);
+              font-size: 0.922rem; }
+              * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .nav-header-opcoes-ul-li .btn .far, * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .nav-header-opcoes-ul-li .btn .fas {
+                color: #fff;
+                margin-right: 10px; }
+              * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .nav-header-opcoes-ul-li .btn:hover {
+                background-color: rgba(0, 0, 0, 0.315);
+                border-left: 2px #349bd6 solid; }
+            * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-ul .nav-header-opcoes-ul-li.btn-effect {
               background-color: rgba(0, 0, 0, 0.315);
               border-left: 2px #349bd6 solid; }
     * .navegacao .body {
+      z-index: 12;
+      transition: 1s;
       width: 100%;
       margin-left: 270px;
       background-color: rgba(214, 199, 199, 0.356); }
+      * .navegacao .body.manipulateBody {
+        transition: 1s;
+        margin-left: 0px; }
       * .navegacao .body .nav-menu {
         background-color: #2b7aa8;
-        width: 100%;
-        height: 60px; }
+        width: 100%; }
         * .navegacao .body .nav-menu .nav-menu-icon {
+          width: 75px;
           opacity: 0.86;
           border: none;
           background-color: rgba(255, 255, 255, 0);
