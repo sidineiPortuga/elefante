@@ -10,21 +10,31 @@
         height: 100%;
         display: flex;
 
+        position: relative;
         .nav-header{
-            transition: 1s;
+            transition: .5s;
+
             &.manipulateMenu{
                 width: 0px;
+                
+                @media (max-width: 1050px){
+                    z-index: 3;
+                    width: 100%;
+                    height: 100%;
+                }
             }
-
+            
             display: flex;
             flex-flow: column;
             align-items: flex-start;
             justify-content: flex-start;
+            
             position: fixed;
             width: $header-width;
-            height: 100%;
+            height: 100%;    
 
             .nav-header-title{
+                position: relative;
                 
                 color: #fff;
 
@@ -37,9 +47,45 @@
 
 
                 padding-top: 15px;
+                
+                .nav-header-btn{
+                    position: absolute; 
+                    top: 25%;
+                    right: 5%;
+
+                    display: none;
+                    opacity: 0.86;
+
+                    border: none;
+
+                    background-color: rgba(255, 255, 255, 0);
+
+                    cursor: pointer;
+
+                    .fa-bars{
+                        padding-left: 5px;
+                        font-size: 2rem;
+                        color: #fff;
+                    }
+                    
+
+                    &:hover{
+                        opacity: 1;
+                    }
+
+                    @media screen and (max-width: 815px){
+                        display: flex;
+                    }
+                }
             }
 
             .nav-header-opcoes{
+                @media(max-width: 1050px){
+                    top: 60px;
+                    position: absolute;
+                    z-index: 2;
+                }
+
                 display: flex;
                 flex-flow: column;
                 align-items: flex-start;
@@ -123,10 +169,21 @@
 
 
         .body{
-            z-index: 12;
-            transition: 1s;
+            z-index: 1;
+            transition: .5s;
+            
+            //Menu Hamburguer, manipulação - transforma o corpo do site 
             &.manipulateBody{
-                transition: 1s;
+                margin-left: 0px;
+
+
+                @media (max-width: 1050px){
+                    margin-left: 0px;
+                }
+
+            }
+            
+            @media (max-width: 1050px){
                 margin-left: 0px;
             }
 

@@ -5,9 +5,10 @@
   box-sizing: border-box; }
   * .navegacao {
     height: 100%;
-    display: flex; }
+    display: flex;
+    position: relative; }
     * .navegacao .nav-header {
-      transition: 1s;
+      transition: .5s;
       display: flex;
       flex-flow: column;
       align-items: flex-start;
@@ -17,7 +18,13 @@
       height: 100%; }
       * .navegacao .nav-header.manipulateMenu {
         width: 0px; }
+        @media (max-width: 1050px) {
+          * .navegacao .nav-header.manipulateMenu {
+            z-index: 3;
+            width: 100%;
+            height: 100%; } }
       * .navegacao .nav-header .nav-header-title {
+        position: relative;
         color: #fff;
         text-align: center;
         font-size: 1.37rem;
@@ -25,6 +32,24 @@
         width: 100%;
         height: 60px;
         padding-top: 15px; }
+        * .navegacao .nav-header .nav-header-title .nav-header-btn {
+          position: absolute;
+          top: 25%;
+          right: 5%;
+          display: none;
+          opacity: 0.86;
+          border: none;
+          background-color: rgba(255, 255, 255, 0);
+          cursor: pointer; }
+          * .navegacao .nav-header .nav-header-title .nav-header-btn .fa-bars {
+            padding-left: 5px;
+            font-size: 2rem;
+            color: #fff; }
+          * .navegacao .nav-header .nav-header-title .nav-header-btn:hover {
+            opacity: 1; }
+          @media screen and (max-width: 815px) {
+            * .navegacao .nav-header .nav-header-title .nav-header-btn {
+              display: flex; } }
       * .navegacao .nav-header .nav-header-opcoes {
         display: flex;
         flex-flow: column;
@@ -33,6 +58,11 @@
         background-color: rgba(0, 0, 0, 0.808);
         width: 100%;
         height: 100%; }
+        @media (max-width: 1050px) {
+          * .navegacao .nav-header .nav-header-opcoes {
+            top: 60px;
+            position: absolute;
+            z-index: 2; } }
         * .navegacao .nav-header .nav-header-opcoes .nav-header-opcoes-title {
           font-size: 1.11rem;
           width: 100%;
@@ -73,14 +103,19 @@
               background-color: rgba(0, 0, 0, 0.315);
               border-left: 2px #349bd6 solid; }
     * .navegacao .body {
-      z-index: 12;
-      transition: 1s;
+      z-index: 1;
+      transition: .5s;
       width: 100%;
       margin-left: 270px;
       background-color: rgba(214, 199, 199, 0.356); }
       * .navegacao .body.manipulateBody {
-        transition: 1s;
         margin-left: 0px; }
+        @media (max-width: 1050px) {
+          * .navegacao .body.manipulateBody {
+            margin-left: 0px; } }
+      @media (max-width: 1050px) {
+        * .navegacao .body {
+          margin-left: 0px; } }
       * .navegacao .body .nav-menu {
         background-color: #2b7aa8;
         width: 100%; }
