@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => 'dev.qrgo.com.br',
+	'username' => 'user_elefante',
+	'password' => '123456',
 	'database' => 'elefante',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

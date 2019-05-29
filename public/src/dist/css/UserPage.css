@@ -221,13 +221,17 @@ ul.perfil-usuario-breadcrumb li a:hover {
 
 .chart-section {
   margin-top: 10px;
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
   width: 100%;
   flex-wrap: wrap; }
 
 .section-dashboard-aside-comments {
-  width: 274px; }
+  width: 274px;
+  background-color: white;
+  height: auto;
+  padding: 11px;
+  margin-top: 10px; }
 
 .profile-pic {
   width: 40px;
@@ -239,14 +243,14 @@ ul.perfil-usuario-breadcrumb li a:hover {
 .comments-box {
   display: flex;
   align-items: center;
-  border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   padding: 2px; }
 
 .comments p {
   display: flex;
   flex-direction: column;
-  width: 188px; }
+  width: 188px;
+  font-size: 12px; }
 
 .add-comment {
   display: flex;
@@ -261,29 +265,18 @@ ul.perfil-usuario-breadcrumb li a:hover {
 .input-text-area::placeholder {
   padding: 8px; }
 
-.chart-container {
-  width: 100%;
-  height: 30vh;
-  position: relative;
-  background-color: white; }
-
-.chart-container header {
-  background-color: #fdfdfd;
-  padding: 10px;
-  border-bottom: 1px solid lightgray; }
-
 .container-actions {
   background-color: white;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   width: 100%; }
 
 .canvas-element {
-  width: 500px;
+  width: 450px;
   height: 200px;
-  position: relative;
-  left: 22%; }
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start; }
 
 .container-actions h1 {
   padding: 10px; }
@@ -293,4 +286,11 @@ ul.perfil-usuario-breadcrumb li a:hover {
 
 .container-actions .container-actions-items header {
   background-color: #f6f6f6;
-  padding: 20px; }
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.container-actions-items-state-header {
+  font-size: 12px;
+  color: gray; }

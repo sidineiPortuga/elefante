@@ -105,51 +105,49 @@
              
 
         </div>
-        <div class="section-dashboard-aside-comments">
-            <h1>Comentários sobre o cliente</h1>
-            <div class="comments-box">
-                <div class="profile-pic">
 
-                </div>
-                <div class="comments">
-                <h4>Renato</h4><span class="profile-online"></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius </p>
-                </div>
-               
-
-            </div>
-            <div class="comments-box">
-                <div class="profile-pic">
-
-                </div>
-                <div class="comments">
-                <h4>Renato</h4><span class="profile-online"></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius </p>
-                </div>
-               
-
-            </div>
-            <div class="add-comment">
-                    <span class="profile-pic"></span>
-                    <textarea class="input-text-area" placeholder="Adicionar comentário"></textarea>
-            </div>
-           
-        </div>
    </aside>
 
+         
+   <div class="section-dashboard-aside-comments">
+                            <h4>Comentários sobre o cliente</h4>
+                            <hr>
+                            <div class="comments-box">
+                                <div class="profile-pic">
+
+                                </div>
+                                <div class="comments">
+                                <h4>Renato</h4><span class="profile-online"></span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius </p>
+                                </div>
+                            
+
+                            </div>
+                            <div class="comments-box">
+                                <div class="profile-pic">
+
+                                </div>
+                                <div class="comments">
+                                <h4>Renato</h4><span class="profile-online"></span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius </p>
+                                </div>
+                            
+
+                            </div>
+                            <div class="add-comment">
+                                    <span class="profile-pic"></span>
+                                    <textarea class="input-text-area" placeholder="Adicionar comentário"></textarea>
+                            </div>
+                        
+                        </div>
+
    <section class="chart-section">
-       <div class="chart-container">
-           <header><h1>Interações</h1></header>
-           <div class="canvas-element">
-               <canvas id="myChart"  ></canvas>
-           </div>
-       </div>
 
        <div class="container-actions">
-           <h1> Timeline de ações</h1>
+           <h1> Timeline de ações</h1> 
 
            <div class="container-actions-items">
-               <header>Atividades online</header>
+               <header>Atividades online <span class="container-actions-items-state-header">São Paulo</span></header>
 
            </div>
            <div class="container-actions-items">
