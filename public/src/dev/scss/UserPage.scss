@@ -201,7 +201,6 @@ ul.perfil-usuario-breadcrumb {
 
 
 // --------------------- BOX ENTRAR EM CONTATO -------------------
-<<<<<<< HEAD
 
 .section-dashboard-aside-contact{
     width: 274px;
@@ -345,15 +344,10 @@ background-color:gray;
 
 
  .chart-container{
+    width: 72vw;
+    height: 30vh;
+    position: relative;
     background-color: white;
-    width: 100%;
-    .canvas-element{
-        width: 100%;
-        height: 200px;
-        max-height: 200px;
-        display: flex;
-        position: relative;
-    }
  }
 
  .chart-container header{
@@ -371,6 +365,7 @@ background-color:gray;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    width: 100%;
 
 }
 
@@ -385,5 +380,3 @@ background-color:gray;
 background-color: #f6f6f6;
 padding:20px;
 }
-=======
->>>>>>> 902bdc4a8c485fc598465dc47e43f312aede878e

@@ -141,7 +141,7 @@
        <div class="chart-container">
            <header><h1>Interações</h1></header>
            <div class="canvas-element">
-               <canvas id="myChart" width="900" ></canvas>
+               <canvas id="myChart" style="height:20vh; width:72vw" ></canvas>
            </div>
        </div>
 
