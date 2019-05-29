@@ -17,6 +17,10 @@
            <input id="remember" class="checkInput" type="checkbox"/> <i verificar="0" class="far fa-square checkbox"></i> <label for="remember">Remember me </label> <p>Forgot your password</p>
        </div>
   </form>
+<<<<<<< HEAD
 </div>
 
 
+=======
+</div>
+>>>>>>> 902bdc4a8c485fc598465dc47e43f312aede878e
