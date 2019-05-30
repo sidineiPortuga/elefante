@@ -9,4 +9,19 @@ class CardUser extends CI_Controller {
       
 
 	}
+
+
+	public function getUser()
+	{
+		
+			$this->load->model('User_list');
+			$model = new User_list();
+
+			$result = $model->get_user_data();
+
+			$resultado = json_encode($result);
+
+			print_r($resultado);
+
+	}
 }

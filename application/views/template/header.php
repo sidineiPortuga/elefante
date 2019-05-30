@@ -17,9 +17,9 @@
     
     
 </head>
-<body ng-controller="appCtrl">
+<body>
 
-<section class="navegacao">
+<section class="navegacao" ng-controller="navCtrl">
     <div class="nav-header" ng-class="{'manipulateMenu':hamburguerMenu}">
         <div class="nav-header-title">
             Laravel        
@@ -36,7 +36,7 @@
 
                 <li class="nav-header-opcoes-ul-li"><button class="nav-header-opcoes-ul-li btn  waves-effect" ng-click="clickStyle()" ng-class="{'btn-effect': clickEffect}"><i class="fas fa-dollar-sign"></i> Currencies</button></li>
 
-                <li class="nav-header-opcoes-ul-li"><button class="nav-header-opcoes-ul-li btn  waves-effect" ng-click="clickStyle()" ng-class="{'btn-effect': clickEffect}"><i class="fas fa-running"></i> Sair</button></li>
+                <a href='<?php echo base_url();?>Login'><li class="nav-header-opcoes-ul-li"><button class="nav-header-opcoes-ul-li btn  waves-effect" ng-click="clickStyle()" ng-class="{'btn-effect': clickEffect}"><i class="fas fa-running"></i> Sair</button></li></a>
 
             </ul>
         </div>
@@ -44,5 +44,3 @@
     
     <div class="body" ng-class="{'manipulateBody':hamburguerMenu}">
         <div class="nav-menu"><button class="nav-menu-icon  waves-effect" ng-click="hamburguer()"><i class="fas fa-bars"></i></button></div>
-
- 

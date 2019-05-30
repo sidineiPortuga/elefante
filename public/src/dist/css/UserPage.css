@@ -46,6 +46,13 @@
 .search-btn:active {
   transform: translateY(2px); }
 
+h1, h4 {
+  padding: 5px;
+  font-family: sans-serif; }
+
+.perfil-usuario {
+  background-color: white; }
+
 .perfil-usuario h1 {
   padding: 20px; }
 
@@ -85,7 +92,8 @@ ul.perfil-usuario-breadcrumb li a:hover {
 .section-dashboard-aside > * {
   background-color: white;
   padding: 10px;
-  margin: 10px; }
+  margin: 10px;
+  border-radius: 5px; }
 
 .section-dashboard-aside-info {
   display: flex;
@@ -232,7 +240,8 @@ ul.perfil-usuario-breadcrumb li a:hover {
   background-color: white;
   height: auto;
   padding: 11px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  border-radius: 5px; }
 
 .profile-pic {
   width: 40px;
@@ -270,6 +279,7 @@ ul.perfil-usuario-breadcrumb li a:hover {
   background-color: white;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
   width: 100%; }
 
 .canvas-element {
@@ -279,6 +289,10 @@ ul.perfil-usuario-breadcrumb li a:hover {
   align-items: flex-start;
   align-content: flex-start; }
 
+.container-actions {
+  padding-left: 10px;
+  padding-right: 10px; }
+
 .container-actions h1 {
   padding: 10px; }
 
@@ -286,7 +300,8 @@ ul.perfil-usuario-breadcrumb li a:hover {
   height: auto;
   width: 71%;
   align-self: flex-end;
-  background-color: white; }
+  background-color: white;
+  margin-top: 10px; }
 
 .container-actions-items-state-content {
   display: flex;
@@ -295,14 +310,17 @@ ul.perfil-usuario-breadcrumb li a:hover {
   padding-left: 28px; }
 
 .container-actions-items-state-content p {
-  font-size: 12px; }
+  font-size: 12px;
+  font-weight: 600;
+  color: #333333cf; }
 
 .container-actions-items h5 {
   padding: 10px;
   padding-left: 28px; }
 
 .item-loja {
-  color: #74c1e6; }
+  color: #74c1e6 !important;
+  margin-right: 5px; }
 
 .container-actions .container-actions-items header {
   background-color: #f6f6f6;

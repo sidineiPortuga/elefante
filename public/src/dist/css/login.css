@@ -70,16 +70,53 @@ form {
   background-color: transparent; }
 
 .btnlogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 10px;
   width: 95%;
   height: 45px;
   border-radius: 5px;
   background-color: #ff5089;
   color: white;
-  border: none; }
+  border: none;
+  cursor: pointer; }
+  .btnlogin:active {
+    transform: translateY(2px); }
+  .btnlogin .container-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFF;
+    width: 100%;
+    height: 100%; }
 
-.btnlogin:active {
-  transform: translateY(2px); }
+.btnregister {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  width: 95%;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #00000015;
+  color: white;
+  border: 1px rgba(255, 255, 255, 0.418) solid;
+  cursor: pointer; }
+  .btnregister:active {
+    transform: translateY(2px); }
+  .btnregister .container-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFF;
+    width: 100%;
+    height: 100%; }
+  .btnregister:hover {
+    background-color: #ff508a;
+    border: none; }
 
 .check {
   border: none;

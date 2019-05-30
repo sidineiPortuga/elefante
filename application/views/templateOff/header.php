@@ -14,4 +14,4 @@
     
     
 </head>
-<body ng-controller="appCtrl">
+<body>

@@ -13,6 +13,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  .container_register .register-back {
+    position: absolute;
+    top: 3%;
+    left: 3%; }
+    .container_register .register-back .register-back-a .fa-arrow-circle-left {
+      font-size: 4rem;
+      color: #fff; }
 
 .container_img {
   border: 3px solid white;
