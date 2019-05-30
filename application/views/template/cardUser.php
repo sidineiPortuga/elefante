@@ -20,15 +20,15 @@
             </div>
         </div>
         
-        <div class="user-content" ng-repeat="friend in friends">
+        <div class="user-content" ng-repeat="user in users">
             <div class="card">
                 <ul class="column-nowrap">
                     <li class="img-card">
                         <div>
-                            <img src='./public/src/dev/img/{{friend.img}}' alt="">
+                            <img src='' alt="">
                         </div>
                         <div>
-                            <h3>{{friend.name}}</h3>
+                            <h3>{{user.user_name}}</h3>
                         </div>
                     </li>
                     <li class="auxiliary-text">

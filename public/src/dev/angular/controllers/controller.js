@@ -1,6 +1,6 @@
 // Controller
 
-app.controller('appCtrl', ['$scope', function($scope) {
+app.controller('appCtrl', ['$scope','$http', function($scope, $http) {
 
     //ABERTURA DO MODAL
     $scope.modalView = false;
@@ -9,7 +9,7 @@ app.controller('appCtrl', ['$scope', function($scope) {
         like :'Curtiu a Página do Facebook',
         enter: 'Entrou na loja',
         exit :'Saiu da loja',
-        date: new Date()
+        date: ' 29/05/2019'
     };
 
     console.log($scope.timelineAcoes)
@@ -29,10 +29,7 @@ app.controller('appCtrl', ['$scope', function($scope) {
         {img:'img.jpg', name:'Peter'}
     ];
 
-    $scope.reset = function() {
-        $scope.friends = angular.copy(friends);
-    }     
-    $scope.reset();
+  
     
     //MENU HAMBURGUER
     $scope.hamburguerMenu = false;
@@ -40,4 +37,24 @@ app.controller('appCtrl', ['$scope', function($scope) {
     $scope.hamburguer = function(){
         $scope.hamburguerMenu = !$scope.hamburguerMenu;
     }
+
+
+$scope.get_data_ajax = function()
+{
+    $http({
+        method: 'GET',
+        url: 'http://localhost/elefante/CardUser/getUser'
+      }).then(function successCallback(response) {
+                 $scope.users = response.data ;
+                 console.log($scope.users)
+              $scope.userJson =  JSON.stringify($scope.users);
+              
+        }, function errorCallback(response) {
+         console.log('errooooooooooooo')
+        });
+}
+
+$scope.get_data_ajax();
+    //
+
 }]);

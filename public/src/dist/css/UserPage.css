@@ -319,7 +319,8 @@ ul.perfil-usuario-breadcrumb li a:hover {
   padding-left: 28px; }
 
 .item-loja {
-  color: #74c1e6 !important; }
+  color: #74c1e6 !important;
+  margin-right: 5px; }
 
 .container-actions .container-actions-items header {
   background-color: #f6f6f6;
