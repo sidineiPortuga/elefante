@@ -24,20 +24,30 @@
             {
                 return array('success'=>false, 'msg'=> 'Preencha o campo de Senha');
             }
+            else if($data->user_pass != $data->user_pass_verify)
+            {
+                return array('success'=>false, 'msg'=> 'Suas senhas não estão iguais');
+            }
             else if(isset($data->user_name) && !empty($data->user_name) && isset($data->user_email) && !empty($data->user_email) && isset($data->user_pass) && !empty($data->user_pass))
             {
+                $obejo = [
+                    'user_name'=> $data->user_name,
+                    'user_email' => $data->user_email,
+                    'user_pass' => $data->user_pass
+                ];
+    
+                $model = new Registermodel();
+    
+                $id = $model->registerUser($obejo); //Passa a Data para o Model. aonde é feito o Insert
+                
+                if($id){
+                    return array('success'=>true, 'msg'=>'Usuário cadastrado com Sucesso!');    
+                }else{
+                    return array('success'=>false, 'msg'=> 'Oops, algo deu errado...');
+                }
+            
 
             }
-
-            $obejo = [
-                'user_name'=> $data->user_name,
-                'user_email' => $data->user_email,
-                'user_pass' => $data->user_pass
-            ];
-
-            $model = new Registermodel();
-
-            $model->registerUser($obejo); //Passa a Data para o Model. aonde é feito o Insert
         }
     }
 ?>

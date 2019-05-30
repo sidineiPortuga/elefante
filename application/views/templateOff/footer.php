@@ -5,7 +5,7 @@
 		<script src="./public/src/dev/angular/module/module.js"></script>
 		<!-- <script src="./public/src/dev/angular/controllers/controller.js"></script> -->
 		<script src="./public/src/dev/angular/controllers/register-controller.js"></script>
-		<!-- <script src="./public/src/dev/angular/controllers/login-controller.js"></script> -->
+		<script src="./public/src/dev/angular/controllers/login-controller.js"></script>
 		<script src="./public/src/dev/angular/controllers/nav-controller.js"></script>
 		<script src="./public/src/dev/angular/controllers/CardList-controller.js"></script>
 	</body>

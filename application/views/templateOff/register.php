@@ -23,5 +23,10 @@
                 </div>
                 <button class="btn_register" ng-click="register()">Cadastrar</button>
         </form>
+        
+        <div id="alert-div" ng-class="{'error-visible':error}">
+                <span class="error-content" ><button class="error-content-close" ng-click="errorClose()"><i class="far fa-times-circle"></i></button></span>
+                <p id="alert-div-message">{{message}}</p>
+        </div>
     </div> 
 </div> 
