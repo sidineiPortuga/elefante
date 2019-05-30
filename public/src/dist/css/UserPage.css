@@ -273,7 +273,7 @@ ul.perfil-usuario-breadcrumb li a:hover {
   resize: none; }
 
 .input-text-area::placeholder {
-  padding: 8px; }
+  padding-top: 10px; }
 
 .container-actions {
   background-color: white;

@@ -37,7 +37,7 @@
                         </p>
                     </li>
                     <li class="flex-end">
-                        <button class="view_user waves-effect">Ver</button>
+                        <a href="UserPage?id={{user.user_id}}"  class="view_user waves-effect">Ver</a>
                     </li>
                 </ul>
             </div>
