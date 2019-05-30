@@ -12,11 +12,17 @@ app.controller('appCtrl', ['$scope','$http', function($scope, $http) {
         date: ' 29/05/2019'
     };
 
-    console.log($scope.timelineAcoes)
+    // console.log($scope.timelineAcoes)
     $scope.modal = function(){
         $scope.modalView = !$scope.modalView;
     }
 
+    $scope.consultar = function($data){
+        let array = {user_email: $scope.login_email, user_pass: $scope.login_senha};
+        $http.post('Login/autenticar', array).then(function(data){
+            $location.path('/cardUser');
+        });
+    }
 
     //REPEAT DO CARD
     var friends = [
