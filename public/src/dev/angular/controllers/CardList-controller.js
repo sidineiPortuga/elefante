@@ -1,4 +1,4 @@
-app.controller('cardCtrl', ['$scope','$http', function($scope, $http) {
+app.controller('cardCtrl', ['$scope','$http', function($scope, $http,$location) {
 
     //ABERTURA DO MODAL
     $scope.modalView = false;
@@ -10,13 +10,14 @@ app.controller('cardCtrl', ['$scope','$http', function($scope, $http) {
         date: ' 29/05/2019'
     };
 
-    console.log($scope.timelineAcoes)
+    // console.log($scope.timelineAcoes)
     $scope.modal = function(){
         $scope.modalView = !$scope.modalView;
     }
     
 
-    //PEGA O USUÁRIO PARA EXIBIR NOS CARDS  
+  
+
     $scope.get_data_ajax = function()
     {
         $http({
@@ -24,7 +25,7 @@ app.controller('cardCtrl', ['$scope','$http', function($scope, $http) {
             url: 'http://localhost/elefante/CardUser/getUser'
         }).then(function successCallback(response) {
                     $scope.users = response.data ;
-                    //  console.log($scope.users)
+                    //  console.log($scope.users,)
                 $scope.userJson =  JSON.stringify($scope.users);
                 
             }, function errorCallback(response) {
