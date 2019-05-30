@@ -17,9 +17,9 @@
     
     
 </head>
-<body ng-controller="appCtrl">
+<body ng-controller="cardCtrl">
 
-<section class="navegacao">
+<section class="navegacao" ng-controller="navCtrl">
     <div class="nav-header" ng-class="{'manipulateMenu':hamburguerMenu}">
         <div class="nav-header-title">
             Laravel        
@@ -44,5 +44,3 @@
     
     <div class="body" ng-class="{'manipulateBody':hamburguerMenu}">
         <div class="nav-menu"><button class="nav-menu-icon  waves-effect" ng-click="hamburguer()"><i class="fas fa-bars"></i></button></div>
-
- 
