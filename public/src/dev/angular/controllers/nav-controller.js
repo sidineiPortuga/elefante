@@ -1,4 +1,4 @@
-app.controller('navCtrl', ['$scope', function($scope) {
+app.controller('navCtrl', ['$scope', function($scope) { //CONFIGURAÇÃO DO MENU DE HAMBURGUER NA NAVBAR
 
     $scope.hamburguerMenu = false;
 

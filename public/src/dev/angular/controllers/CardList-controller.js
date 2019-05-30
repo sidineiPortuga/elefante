@@ -16,10 +16,7 @@ app.controller('cardCtrl', ['$scope','$http', function($scope, $http,$location) 
     }
     
 
-    $scope.goUserPage = function(){
-        console.log('ta vindo aqui');
-        window.location.replace('http://localhost/elefante/UserPage');
-    }
+  
 
     $scope.get_data_ajax = function()
     {

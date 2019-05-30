@@ -5,7 +5,7 @@ class CardUser extends CI_Controller {
 
 	public function index()
 	{
-        $this->template->show('template/cardUser.php');
+        $this->template->show('template/CardPage.php');
       
 
 	}

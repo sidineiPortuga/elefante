@@ -1,6 +1,7 @@
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
 
+<<<<<<< HEAD
 
 <script src="<?php echo base_url()?>public/src/dev/js/libs/projeto.js"></script>
 		<script src="<?php echo base_url()?>public/src/dev/js/libs/angular.js"></script>

@@ -13,7 +13,7 @@ class UserPage extends CI_Controller {
 
 	public function getUser()
 	{
-			
+		$data = json_encode(file_get_contents("php://input"));
 		$this->load->model('User_list');
 		$model = new User_list();
 

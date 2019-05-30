@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+    defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User_list extends CI_Model {
 
@@ -8,6 +8,7 @@ class User_list extends CI_Model {
 
         $this->load->database();
     }
+
 
     
 public function get_user_data(){
@@ -28,4 +29,4 @@ public function get_user_data_id(){
 
 }
 
-
+?>
