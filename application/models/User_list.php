@@ -12,7 +12,7 @@ class User_list extends CI_Model {
     
 public function get_user_data(){
     $this->db
-    ->select('user_id,user_name, user_email, user_pass', 'data_user','user_status')
+    ->select('user_name, user_email', 'data_user')
     ->from('tb_users');
     return $this->db->get()->result();
 }
