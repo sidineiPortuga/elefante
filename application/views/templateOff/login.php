@@ -5,22 +5,17 @@
                 <img class="loginSvg" src="./public/src/dev/img/user.svg" alt="login icon">
         </div>
 
-   <form>
-       <div class="containerInput">
-             <span><img  class="loginSvgInput" src="./public/src/dev/img/user.svg"/></span><input type="text" name="username" placeholder="USERNAME"/>
-       </div>
-       <div class="containerInput">
-             <span><img class="loginSvgInput" src="./public/src/dev/img/unlocked.svg"/></span><input type="password" name="password" placeholder="PASSWORD"/>
-      </div>
-       <button class="btnlogin" type="submit">LOGIN</button>
-       <div class="check">
-           <input id="remember" class="checkInput" type="checkbox"/> <i verificar="0" class="far fa-square checkbox"></i> <label for="remember">Remember me </label> <p>Forgot your password</p>
-       </div>
-  </form>
-<<<<<<< HEAD
+        <form>
+            <div class="containerInput">
+                    <span><img  class="loginSvgInput" src="./public/src/dev/img/user.svg"/></span><input type="text" name="username" placeholder="USERNAME"/>
+            </div>
+            <div class="containerInput">
+                    <span><img class="loginSvgInput" src="./public/src/dev/img/unlocked.svg"/></span><input type="password" name="password" placeholder="PASSWORD"/>
+            </div>
+            <button class="btnlogin" type="submit">LOGIN</button>
+            <div class="check">
+                <input id="remember" class="checkInput" type="checkbox"/> <i verificar="0" class="far fa-square checkbox"></i> <label for="remember">Remember me </label> <p>Forgot your password</p>
+            </div>
+        </form>
+    </div>
 </div>
-
-
-=======
-</div>
->>>>>>> 902bdc4a8c485fc598465dc47e43f312aede878e

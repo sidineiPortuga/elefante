@@ -8,10 +8,9 @@ class Registermodel extends CI_Model {
 
         $this->load->database();
     }
+    // Injetando as informações cadastradas na Table de Usuários
+    function registerUser($data){
 
-	public function index()
-	{
-        
-
-	}
+        $this->db->insert('tb_users', $data);
+    }
 }
