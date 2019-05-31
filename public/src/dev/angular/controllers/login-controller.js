@@ -1,22 +1,21 @@
-// CONTROLLER PARA O LOGIN
+// Controller da pagina de login pega os valores em array e envia com ajax
 
-app.controller('loginCtrl', ['$scope','$http', function($scope, $http) {
+app.controller('appCtrl', ['$scope','$http', function($scope, $http) {
 
-    $scope.get_data_ajax = function()
-    {
-        $http({
-            method: 'GET',
-            url: 'http://localhost/elefante/CardUser/getUser'
-        }).then(function successCallback(response) {
-                    $scope.users = response.data ;
-                    console.log($scope.users)
-                $scope.userJson =  JSON.stringify($scope.users);
-                
-            }, function errorCallback(response) {
-            console.log('Err')
-            });
+    $scope.consultar = function(){
+        let array = {user_email: $scope.login_email,user_pass: $scope.login_senha};
+        
+        $http.post('login/autenticar', array).then(function(data){
+            let response = data.data;
+            
+            // IF PARA FAZER A VALIDAÇÃO
+            if(response.success){   
+
+            }
+            else{
+                alert(response.msg);
+            }
+        });
     }
-
-    $scope.get_data_ajax();
 
 }]);

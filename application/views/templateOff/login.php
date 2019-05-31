@@ -1,5 +1,5 @@
 
-<div class="bodylogin" ng-controller="loginCtrl">
+<div class="bodylogin" ng-controller="appCtrl">
     <div class="containerLogin">
         <div class="containersvg">
                 <img class="loginSvg" src="./public/src/dev/img/user.svg" alt="login icon">
@@ -18,14 +18,6 @@
            <input id="remember" class="checkInput" type="checkbox"/> <i verificar="0" class="far fa-square checkbox"></i> <label for="remember">Remember me </label> <p>Forgot your password</p>
        </div>
        <div>
-       <?php if($this->session->flashdata("success") ): ?>
-            <p><?= $this->session->flashdata("success") ?></p>
-        <?php endif ?>
-        <?php if($this->session->flashdata("danger") ): ?>
-            <p><?= $this->session->flashdata("danger") ?></p>
-        <?php endif ?>
+       <div class="retorno"></div>
        </div>
   </form>
-</div>
-
-
