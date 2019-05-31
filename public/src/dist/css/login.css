@@ -14,13 +14,13 @@
   width: 100%;
   height: 100%; }
 
-.retorno {
+#retorno {
     padding: 10px 0px;
     color: #fff;
     font-size: 22px;
     font-weight: 600;
-    font-style: italic;
-}
+    font-style: italic;}
+
 .containersvg {
   border: 3px solid white;
   border-radius: 50%;

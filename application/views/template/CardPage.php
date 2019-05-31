@@ -29,6 +29,7 @@
                                 <img src='' alt="">
                             </div>
                             <div>
+                            
                                 <h3>{{user.user_name}}</h3>
                             </div>
                         </li>

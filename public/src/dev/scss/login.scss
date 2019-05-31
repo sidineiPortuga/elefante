@@ -9,7 +9,13 @@
     height: 100vh;
 }
 
-
+#retorno {
+    font-size: 19px;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: 600;
+    font-style: italic;
+}
 .containerLogin{
     display: flex;
     flex-direction: column;
