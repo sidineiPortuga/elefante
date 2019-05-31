@@ -16,13 +16,15 @@ app.controller('cardCtrl', ['$scope','$http', function($scope, $http,$location) 
     }
     
 
+    
+
   
 
     $scope.get_data_ajax = function()
     {
         $http({
             method: 'GET',
-            url: 'http://localhost/elefante/CardUser/getUser'
+            url: 'http://localhost/elefante/Cardpage/getUser'
         }).then(function successCallback(response) {
                     $scope.users = response.data ;
                     //  console.log($scope.users,)

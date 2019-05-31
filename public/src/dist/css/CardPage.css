@@ -1,0 +1,235 @@
+.modal {
+  transition: .5s;
+  position: relative;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; }
+  .modal.active {
+    transition: 2s;
+    display: flex;
+    opacity: 1; }
+  .modal .bg {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4); }
+  .modal .modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+    background-color: #55aadb;
+    padding: 20px;
+    border: 0.55px solid rgba(136, 136, 136, 0.315);
+    border-radius: 8px;
+    height: 500px;
+    width: 40%;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.082); }
+    @media screen and (max-width: 900px) {
+      .modal .modal-content {
+        width: 50%; } }
+    @media screen and (max-width: 450px) {
+      .modal .modal-content {
+        width: 75%; } }
+    .modal .modal-content .modal-content-close {
+      opacity: .85;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 15;
+      margin: 15px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      cursor: pointer; }
+      .modal .modal-content .modal-content-close:hover {
+        opacity: 1; }
+      .modal .modal-content .modal-content-close .fa-times-circle {
+        font-size: 2rem; }
+    .modal .modal-content .modal-content-form {
+      width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .modal .modal-content .modal-content-form .modal-content-form-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0);
+        height: 200px;
+        width: 200px; }
+        .modal .modal-content .modal-content-form .modal-content-form-img #modal-content-form-img-user {
+          height: 75%;
+          width: 75%; }
+      .modal .modal-content .modal-content-form .modal-content-form-input {
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 4px;
+        border: none; }
+      .modal .modal-content .modal-content-form .modal-content-form-btn {
+        cursor: pointer;
+        width: 100%;
+        height: 50px;
+        background-color: #ffffff;
+        color: #000;
+        border: none;
+        border-radius: 4px;
+        margin: 10px 0;
+        padding: 5px 10px; }
+        .modal .modal-content .modal-content-form .modal-content-form-btn:hover {
+          color: #fff;
+          background-color: #ff5089; }
+
+.card-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 100px 50px;
+  background: #fff; }
+  .card-user h3 {
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+    color: #7d7d7d;
+    text-align: center; }
+  .card-user p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #191c03;
+    text-align: center; }
+  .card-user hr {
+    width: 200px;
+    height: 2px;
+    background-color: #191c03;
+    margin-bottom: 70px;
+    border: none; }
+  .card-user .grid {
+    transition: all 1s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap; }
+    .card-user .grid .user-content {
+      display: flex;
+      justify-content: center;
+      transition: 1s;
+      width: 20%;
+      height: 428px;
+      width: 358px;
+      background-clip: content-box;
+      background-size: cover;
+      background-position: center;
+      background-color: white;
+      padding: 0px 1%;
+      margin-bottom: 6%;
+      margin-right: 2%;
+      border-radius: 11px; }
+      @media screen and (max-width: 1660px) {
+        .card-user .grid .user-content {
+          width: 396px; } }
+      @media screen and (max-width: 1450px) {
+        .card-user .grid .user-content {
+          width: 448px; } }
+      @media screen and (max-width: 1040px) {
+        .card-user .grid .user-content {
+          width: 50%; } }
+      @media screen and (max-width: 730px) {
+        .card-user .grid .user-content {
+          width: 80%; } }
+      @media screen and (max-width: 420px) {
+        .card-user .grid .user-content {
+          width: 250px;
+          width: 340px; } }
+    .card-user .grid .card {
+      box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.35);
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+      transform: translateY(0px);
+      transition: all .2s; }
+      @media screen and (max-width: 420px) {
+        .card-user .grid .card {
+          width: 250px;
+          width: 340px; } }
+      .card-user .grid .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 16px #929292; }
+      .card-user .grid .card ul {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between; }
+        .card-user .grid .card ul li {
+          list-style: none;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .card-user .grid .card ul li p {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            direction: ltr;
+            width: 100%; }
+    .card-user .grid .auxiliary-text p {
+      padding: 0px 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #7d7d7d; }
+    .card-user .grid .img-card img {
+      padding: 23px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%; }
+    .card-user .grid .img-card div {
+      flex-direction: column; }
+    .card-user .grid .view_user {
+      height: 50px;
+      border: none;
+      padding: 4% 26%;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #f3f3f3;
+      margin-bottom: 12%;
+      border-radius: 4px;
+      background: #909090;
+      box-shadow: 0px 0px 7px #a0a0a0;
+      cursor: pointer;
+      transition: 0.2s;
+      display: flex;
+      align-items: center; }
+      .card-user .grid .view_user:hover:active:focus {
+        background: #545454;
+        transition: 0.2s; }
+    .card-user .grid .plus-user {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      cursor: pointer; }
+      .card-user .grid .plus-user i {
+        font-size: 4rem;
+        color: #a9a9a9; }
+    @media (max-width: 800px) {
+      .card-user .grid .card-user .grid .user-content {
+        width: 100%; } }

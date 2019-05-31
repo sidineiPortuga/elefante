@@ -1,6 +1,33 @@
 app.controller('UserPageCtrl', ['$scope','$http','$location', function($scope,$http, $location) {
 
-    console.log('mano');
+    // $scope.trocarIcone = function(){
+    //     var genero = $('.user-genero').html();
+    //     if(genero == 'feminino'){
+    //         $('.genero').removeClass('fa-mars').addClass('fa-venus');
+    //     }else{
+    //         $('.genero').removeClass('fa-venus').addClass('fa-mars');
+    //     }
+    // }
+ 
+
+    setTimeout(function(){    $scope.trocarIcone(); }, 1000);
+
+    $scope.trocarIcone = function(){
+      
+     var genero =   document.querySelector('.user-genero').innerHTML;
+        if(genero == 'feminino '){
+            document.querySelector('.generoIcon').classList.remove('fa-mars');
+            document.querySelector('.generoIcon').classList.add('fa-venus');
+        }
+    }
+ 
+
+    console.log('ahahhahaha');
+
+
+    $scope.users ={
+        user_name:'teste'
+    };
 
     $scope.get_data_ajax2 = function(){
 
@@ -10,8 +37,10 @@ app.controller('UserPageCtrl', ['$scope','$http','$location', function($scope,$h
             id:c
         }
 
-        $http.post('http://localhost/elefante/UserPage/getUser', param).then(function(response){
+        $http.post('http://localhost/elefante/Userpage/getUser', param).then(function(response){
             console.log(response);
+            $scope.users = response.data.user;
+
         })
         // $http({
         //     method: 'GET',
@@ -25,6 +54,6 @@ app.controller('UserPageCtrl', ['$scope','$http','$location', function($scope,$h
         // });
     }
 
-        $scope.get_data_ajax2();
+    $scope.get_data_ajax2();
 
 }]);

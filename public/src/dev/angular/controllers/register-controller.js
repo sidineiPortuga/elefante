@@ -4,7 +4,7 @@ app.controller('registerCtrl', ['$scope','$http', function($scope, $http) {
         $scope.alertRegister =  document.getElementById('alert-div');
 
     $scope.register = function(){
-        let datas = {user_name: $scope.name, user_email: $scope.email, user_pass: $scope.password, user_pass_verify: $scope.password_verify};
+        let datas = {user_name: $scope.name, user_email: $scope.email, user_pass: $scope.password, user_adress: $scope.adress,user_phone: $scope.phone, user_pass_verify: $scope.password_verify, genero: $scope.genero, user_idade: $scope.idade};
 
         $http.post("Register/create", datas).then(function(data){
             let response = data.data;
@@ -12,7 +12,7 @@ app.controller('registerCtrl', ['$scope','$http', function($scope, $http) {
             // IF PARA FAZER A VALIDAÇÃO
             if(response.success){   
                 alert(response.msg);
-                window.location.href = 'http://localhost/elefante/CardUser';
+                window.location.href = 'http://localhost/elefante/Cardpage';
             }
             else{
                 return $scope.message = response.msg;
@@ -20,6 +20,8 @@ app.controller('registerCtrl', ['$scope','$http', function($scope, $http) {
         })
     }
 
+
+    
 
     $scope.error = false;
 

@@ -20,6 +20,14 @@
             {
                 return array('success'=>false, 'msg'=> 'Preencha o campo de Email');
             }
+            else if(!isset($data->user_adress) || empty($data->user_adress))
+            {
+                return array('success'=>false, 'msg'=> 'Preencha o campo de Endereço');
+            }
+            else if(!isset($data->user_phone) || empty($data->user_phone))
+            {
+                return array('success'=>false, 'msg'=> 'Preencha o campo de Telefone');
+            }
             else if(!isset($data->user_pass) || empty($data->user_pass))
             {
                 return array('success'=>false, 'msg'=> 'Preencha o campo de Senha');
@@ -33,7 +41,11 @@
                 $obejo = [
                     'user_name'=> $data->user_name,
                     'user_email' => $data->user_email,
-                    'user_pass' => $data->user_pass
+                    'user_adress' => $data->user_adress,
+                    'user_phone' => $data->user_phone,
+                    'user_pass' => $data->user_pass,
+                    'genero' =>$data->genero,
+                    'user_idade'=> $data->user_idade
                 ];
     
                 $model = new Registermodel();

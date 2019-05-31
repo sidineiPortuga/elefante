@@ -7,7 +7,7 @@
     
     <title>Elefante</title>
 
-    <link href="<?php echo base_url()?>public/src/dist/css/nav-page.css" rel="stylesheet" />
+ 
     <link href="<?php echo base_url()?>public/src/dist/css/login.css" rel="stylesheet" />
     <link href="<?php echo base_url()?>public/src/dist/css/UserPage.css" rel="stylesheet" />
     <link href="<?php echo base_url()?>public/src/dist/css/register.css" rel="stylesheet" />

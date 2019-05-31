@@ -38,10 +38,10 @@
                     </div>
                     <div class="info-box">
                          <div class="info-box-profile">
-                              <h4>{{ users.user_name }}</h4><span class="profile-online"></span>
+                              <h4>{{users.user_name}}</h4><span class="profile-online"></span>
                         </div>
                         <div class="info-box-bottom">
-                        <span class="fa fa-mars"></span><p>Feminino</p>   <span class="fa fa-calendar"></span><p>27 anos</p>
+                        <span class="fa fa-mars generoIcon"></span> <p class="user-genero">{{ users.genero }} </p>  <span class="fa fa-calendar"></span><p>{{ users.user_idade }} anos</p>
                         </div>
                          
                     </div>
@@ -49,13 +49,13 @@
                 <a class="info-box-btn">Receita gerada: <span>R$1.1199,00</span></a>
                 <div class="info-box-contacts">
                         <div class="info-box-contact-cotent">
-                             <i class="fa fa-envelope"></i><p>laraschmidt@gmail.com</p>  
+                             <i class="fa fa-envelope"></i><p>{{users.user_email}}</p>  
                         </div>
                         <div class="info-box-contact-cotent">
-                             <i class="fa fa-phone"></i><p>11 96765-4312</p>  
+                             <i class="fa fa-phone"></i><p>{{users.user_phone}}</p>  
                         </div>
                         <div class="info-box-contact-cotent">
-                              <i class="fa fa-map-marker"></i><p>R. Dr Diogo Faria 775</p>  
+                              <i class="fa fa-map-marker"></i><p>{{users.user_adress}}</p>  
                         </div>
                 </div>
         </div>
