@@ -13,6 +13,7 @@ class Registermodel extends CI_Model {
     function registerUser($obejo){
 
         $this->db->insert('tb_users', $obejo);
+        return $this->db->insert_id();
 
 
     }
